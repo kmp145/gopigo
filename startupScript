@@ -1,6 +1,10 @@
 #!/bin/bash
 
+echo Starting startup script!
 apt-get update && apt-get upgrade
+echo System updated
 cd /gopigo
+echo updating scripts...
 git fetch
-./main
+echo Starting main
+python main.py
